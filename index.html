@@ -90,10 +90,8 @@ h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:-.025em;margin:0 0 14px;font-
 /* LEADERSHIP */
 .leader{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start}
 @media(max-width:760px){.leader{grid-template-columns:1fr}}
-.photo{aspect-ratio:4/5;border-radius:14px;border:1px solid var(--line);background:
-  radial-gradient(circle at 50% 32%,rgba(94,234,212,.12),transparent 60%),
-  repeating-linear-gradient(45deg,#111823,#111823 10px,#0e141d 10px,#0e141d 20px);
-  display:grid;place-items:center;text-align:center;padding:20px;color:var(--ink-faint);font-size:13px}
+.photo{aspect-ratio:4/5;border-radius:14px;border:1px solid var(--line);overflow:hidden;background:var(--card);position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 16%;display:block}
 .leader h3{font-size:20px;margin:0 0 2px;letter-spacing:-.02em}
 .role{color:var(--accent);font-size:13.5px;margin:0 0 18px;font-weight:600;letter-spacing:.02em}
 .leader p{color:var(--ink-dim);font-size:15.5px;margin:0 0 14px}
@@ -220,7 +218,7 @@ footer a:hover{color:var(--accent)}
       <h2>The person doing the work</h2>
     </div>
     <div class="leader">
-      <div class="photo">PHOTO<br><span class="mono" style="font-size:11px">assets/nayil.jpg</span></div>
+      <div class="photo"><img src="assets/nayil.jpg" alt="Nayil Arana, Principal and Software Engineer at JackLabs.ai" width="800" height="1000"></div>
       <div>
         <h3>Nayil Arana</h3>
         <p class="role">Principal &amp; Software Engineer</p>
